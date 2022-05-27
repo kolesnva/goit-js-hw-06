@@ -8,7 +8,7 @@ function onTextInputLoseFocus(event) {
 
   textInput.classList.add('invalid');
 
-  if (enteredSymbolsNum >= validSymbolsNum) {
+  if (enteredSymbolsNum === validSymbolsNum) {
     textInput.classList.remove('invalid');
     textInput.classList.add('valid');
   }
